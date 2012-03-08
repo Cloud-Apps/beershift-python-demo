@@ -1,7 +1,8 @@
-Bottle on OpenShift Express
-============================
+Beershift Server in Python on OpenShift Express
+===============================================
 
-This git repository helps you get up and running quickly w/ a Bottle installation
+This git repository helps you get up and running quickly with
+a Beershift Server in Python
 on OpenShift Express.
 
 
@@ -12,12 +13,12 @@ Create an account at http://openshift.redhat.com/
 
 Create a python-2.6 application
 
-    rhc app create -a bottle -t python-2.6
+    rhc app create -a beershift -t python-2.6
 
-Add this upstream bottle repo
+Add this upstream beershift repo
 
-    cd bottle
-    git remote add upstream -m master git://github.com/openshift/bottle-openshift-quickstart.git
+    cd beershift
+    git remote add upstream -m master git://github.com/openshift/beershift-python-quickstart.git
     git pull -s recursive -X theirs upstream master
     
 Then push the repo upstream
@@ -26,5 +27,5 @@ Then push the repo upstream
 
 That's it, you can now checkout your application at:
 
-    http://bottle-$yournamespace.rhcloud.com
+    http://beershift-$yournamespace.rhcloud.com
 

@@ -10,4 +10,4 @@ try:
 except IOError:
     pass
 
-from mybottleapp import application
+from beershift import application
